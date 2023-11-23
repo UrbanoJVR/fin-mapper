@@ -21,3 +21,52 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IntelliJ IDEA
+.idea/
+
+# Compiled files
+*.class
+*.jar
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# User-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/libraries
+.idea/caches
+
+# Sensitive or high-churn files
+.idea/codeStyles/
+.idea/scopes/
+.idea/dictionaries
+
+# Gradle
+.gradle/
+build/
+
+# Kotlin
+*.kotlin_module
+
+# Windows
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.nupkg
+*.resharper
+*.resharper.user
+_ReSharper*/
+[Tt]est[Rr]esult*
+
+# Linux
+*~
