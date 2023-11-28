@@ -1,8 +1,12 @@
 import React from 'react';
+import TopMenu from "../topMenu/app-bar";
 
 function CategoriesDashboard() {
     return (
-        <h1> IT WORKS</h1>
+        <>
+            <TopMenu/>
+            <h1> IT WORKS</h1>
+        </>
     );
 }
 
