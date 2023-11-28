@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Button, Typography, Card, CardContent, Grid} from '@mui/material';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import CategoriesDashboard from './categories/categories-dashboard';
-import {Route, Routes, Link} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
+import Home from "./home/home";
 
 const theme = createTheme({
     palette: {
@@ -17,35 +17,11 @@ function App() {
         <ThemeProvider theme={theme}>
 
             <Routes>
-                <Route path="cat1" element={<CategoriesDashboard/>}/>
+                <Route path="/cat1" element={<CategoriesDashboard/>}/>
+                <Route path="/" element={<Home/>}/>
             </Routes>
 
             <CssBaseline/>
-            <Card className="custom-card">
-                <CardContent>
-                    <Grid container spacing={2} direction="column">
-                        <Grid item>
-                            <Typography variant="h4" fontWeight="bold">
-                                FinMapper
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Link to="/cat1">
-                                Gestionar categorías
-                            </Link>
-                        </Grid>
-                        <Grid item>
-                            <Button>
-                                Cargar Archivo
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </CardContent>
-            </Card>
-            {/*<Switch>*/}
-            {/*    /!* Agrega una ruta para CategoriesDashboard *!/*/}
-            {/*    <Route path="/categories-dashboard" component={CategoriesDashboard} />*/}
-            {/*</Switch>*/}
         </ThemeProvider>
     );
 }
