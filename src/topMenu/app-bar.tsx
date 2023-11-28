@@ -13,29 +13,30 @@ function TopMenu() {
 
 
     return (
-        <Box sx={{ flexGrow: 1}}>
+        <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
                 <Toolbar>
                     <Typography
-                                        variant="h6"
-                                        noWrap
-                                        component="a"
-                                        href="#app-bar-with-responsive-menu"
-                                        sx={{
-                                            mr: 2,
-                                            display: { xs: 'none', md: 'flex' },
-                                            fontFamily: 'monospace',
-                                            fontWeight: 700,
-                                            letterSpacing: '.3rem',
-                                            color: 'inherit',
-                                            textDecoration: 'none',
-                                            flexGrow: 1,
-                                        }}
-                                    >
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        href="#app-bar-with-responsive-menu"
+                        sx={{
+                            mr: 2,
+                            display: {xs: 'none', md: 'flex'},
+                            fontFamily: 'monospace',
+                            fontWeight: 700,
+                            letterSpacing: '.3rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                            flexGrow: 1,
+                        }}
+                    >
                         FinMapper
                     </Typography>
                     <Button variant="contained" color="success" sx={{margin: 1}} onClick={homePage}>Home</Button>
-                    <Button variant="contained" color="success" sx={{margin: 1}} onClick={categoriesPage}>Categorías</Button>
+                    <Button variant="contained" color="success" sx={{margin: 1}}
+                            onClick={categoriesPage}>Categorías</Button>
                     <Button variant="contained" color="success" sx={{margin: 1}}>Cargar archivo</Button>
                 </Toolbar>
             </AppBar>
